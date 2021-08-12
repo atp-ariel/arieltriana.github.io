@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hi - I'm Ariel</title>
+        <title>@atp_ariel page</title>
     </head>
     <body>
-        <h1>Welcome Ariel</h1>
+        <h1 id="my-name">Ariel Alfonso Triana Pérez</h1>
         
         <!-- Scripts -->
         <script src="https://rawgit.com/Microsoft/TypeScript/master/lib/typescriptServices.js"></script>
         <script src="https://rawgit.com/basarat/typescript-script/master/transpiler.js"></script>
+
+        <script type="text/typescript">
+            const myName = document.getElementById("my-name");
+            myName.prepend("<p>Yo soy</p>");
+        </script>
         <!-- Scripts -->
     </body>
 </html>
