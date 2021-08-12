@@ -2,18 +2,17 @@
 <html>
     <head>
         <title>@atp_ariel page</title>
+
+        <script type="text/typescript">
+            const myName = document.getElementById(`my-name`);
+            myName.prepend(`<p>Yo soy</p>`);
+        </script>
+
+        <script src="https://rawgit.com/Microsoft/TypeScript/master/lib/typescriptServices.js"></script>
+        <script src="https://rawgit.com/basarat/typescript-script/master/transpiler.js"></script>
     </head>
     <body>
         <h1 id="my-name">Ariel Alfonso Triana Pérez</h1>
         
-        <!-- Scripts -->
-        <script src="https://rawgit.com/Microsoft/TypeScript/master/lib/typescriptServices.js"></script>
-        <script src="https://rawgit.com/basarat/typescript-script/master/transpiler.js"></script>
-
-        <script type="text/typescript">
-            const myName = document.getElementById("my-name");
-            myName.prepend("<p>Yo soy</p>");
-        </script>
-        <!-- Scripts -->
     </body>
 </html>
