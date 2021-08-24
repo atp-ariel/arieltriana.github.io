@@ -28,10 +28,6 @@ p, a, span, i, .sub-font {
     height: 100vh;
 }
 
-/*  *************************   */
-/*  ***  Index Main Menu  ***   */
-/*  *************************   */
-
 .main-menu {
     margin-top: 3%;
 }
@@ -44,6 +40,6 @@ p, a, span, i, .sub-font {
 }
 
 
-.rrss {
-    margin-right: 4%;
+.bg-white-01 {
+    background-color: #f0f0f0;
 }
