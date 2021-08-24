@@ -8,4 +8,9 @@ function calculate_age() {
   
 $(document).ready(function(){
     $("#age").html(calculate_age());
+
+    fetch('https://api.github.com/users/ArielTriana')
+        .then(response => response.json())
+        .then(data => $("#count-repos").html(data["public_repos"]));
 });
+

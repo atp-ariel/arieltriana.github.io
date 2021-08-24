@@ -36,10 +36,14 @@ p, a, span, i, .sub-font {
 }
 
 .main-menu-item > a:hover{
-    color: #0f0f0f!important;
+    color: #f0a0a0!important;
 }
 
 
 .bg-white-01 {
     background-color: #f0f0f0;
+}
+
+.rrss {
+    font-size: 25px;
 }
