@@ -26,7 +26,6 @@ $(document).ready(function(){
         .then(response => response.json())
         .then(data => $("#count-repos").html(data["public_repos"]));
 
-
     print_pinned();
 });
 
