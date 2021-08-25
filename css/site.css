@@ -52,3 +52,11 @@ p, a, span, i, .sub-font {
     min-height: 100%;
     background: transparent;
 }
+
+.projects > p {
+    font-size: small;
+}
+
+.f-l {
+    font-size: large!important;
+}

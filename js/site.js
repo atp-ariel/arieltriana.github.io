@@ -12,7 +12,7 @@ async function print_pinned() {
         .then(
             data => data.forEach(
                 repo_item => {
-                    pinned = pinned.concat(`<div class="card col-md-4 col-sm-6 rounded-0 p-3"><a href="${repo_item["link"]}" class="main-font">${repo_item["repo"]}</a><p><strong>Description: </strong>${repo_item["description"]}</p></div>`)
+                    pinned = pinned.concat(`<div class="card projects col-sm-6 rounded-0 p-3"><a href="${repo_item["link"]}" target="blank" class="main-font f-l">${repo_item["repo"]}</a><p><strong>Description: </strong>${repo_item["description"]}</p><p><strong>Language: </strong>${repo_item["language"]}</p><p>${repo_item["stars"]} <i class="fa fa-star"></i>     ${repo_item["forks"]} <i class="fas fa-code-branch"></i></p></div>`)
                 }
             )
         )
