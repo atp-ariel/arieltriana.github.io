@@ -47,3 +47,8 @@ p, a, span, i, .sub-font {
 .rrss {
     font-size: 25px;
 }
+
+.parallax-window {
+    min-height: 100%;
+    background: transparent;
+}
