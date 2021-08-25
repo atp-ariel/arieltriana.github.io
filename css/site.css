@@ -34,7 +34,7 @@ p, a, span, i, .sub-font {
 .main-menu-item > a{
     color: white;
 }
-
+.abtn:hover, 
 .main-menu-item > a:hover{
     color: #f0a0a0!important;
 }
