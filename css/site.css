@@ -21,7 +21,6 @@ p, a, span, i, .sub-font {
 
 .main-cover {
     height: 100vh;
-    box-shadow: 0px 0px 25px 0px;
 }
 
 .vh100 {
@@ -39,6 +38,9 @@ p, a, span, i, .sub-font {
     color: #f0a0a0!important;
 }
 
+.i-l {
+    font-size: 64px !important;
+}
 
 .bg-white-01 {
     background-color: #f0f0f0;
@@ -59,4 +61,8 @@ p, a, span, i, .sub-font {
 
 .f-l {
     font-size: large!important;
+}
+
+.text-black {
+    color: black !important;
 }

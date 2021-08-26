@@ -19,6 +19,42 @@ async function print_pinned() {
     $("#repos-pinned").html(pinned);
 }
 
+function get_posts_medium() {
+    fetch("https://api.rss2json.com/v1/api.json?rss_url=https://atp-ariel.medium.com/feed/")
+        .then(response => response.json())
+        .then(data => {
+            if(data["items"].length === 0)
+            {
+                $("#blog-title").append("<p>There are no post in the blog</p><small  class='text-white' >Subscribe on <a class='m-3'href='https://atp-ariel.medium.com'><i class='fab fa-medium text-white f-l'></i></a></small>")
+            }
+            else{
+                $("#blog").append("<div class='container-flex'><div id='blog-content' class='row justify-content-center'></div></div>")
+                data["items"].forEach(post => {
+                    pubDate = new Date(post["pubDate"])
+                    let ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(pubDate);
+                    let mo = new Intl.DateTimeFormat('en', { month: '2-digit' }).format(pubDate);
+                    let da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(pubDate);
+                    $("#blog-content").append(`
+                    <div class="card col-sm-5 rounded-0 m-3 shadow">
+                        <div class="bg-white card-header w-100">
+                            <a href="${post["link"]}"><h5 class="text-black">${post["title"]}</h5></a>
+                            <div class="d-flex">
+                                <small class="mr-2"><i class="fas fa-clock mr-2"></i>${ye}-${mo}-${da}</small>
+                                <small class="mr-2"><i class="fas fa-user mr-2"></i>${post["author"]}</small>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>${post["description"].substring(0,300)}</p>
+                        </div>
+                        <div class="card-footer bg-white m-2 text-right">
+                            <a class="bg-color shadow text-white rounded-pill p-2 text-decoration-none abtn" href="${post["link"]}">Read more</a>
+                        </div>
+                    </div>`)
+                })
+            }
+        })
+}
+
 $(document).ready(function(){
     $("#age").html(calculate_age());
 
@@ -27,5 +63,7 @@ $(document).ready(function(){
         .then(data => $("#count-repos").html(data["public_repos"]));
 
     print_pinned();
+
+    get_posts_medium();
 });
 
