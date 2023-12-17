@@ -1,0 +1,32 @@
+.navbar {
+    box-shadow: 0 0 10px var(--color-primary-light);
+    z-index: 9999 !important;
+    position: absolute;
+    background-color: var(--color-background)!important;
+}
+
+.nav-brand span {
+  font-size: 1.5rem;
+  font-weight: 600!important;
+  padding-left: 1rem;
+  color: var(--color-primary);
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.nav-brand img {
+    box-shadow: 0 0 10px var(--color-primary-light);
+}
+
+
+#navbarScroll a {
+    color: var(--color-text);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#navbarScroll a:hover {
+    color: var(--color-action)!important;
+}
+

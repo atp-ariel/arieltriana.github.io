@@ -1,0 +1,38 @@
+[
+    {
+        "name": "BNZSA API",
+        "description": "Software to ingest data from another companies and provide it to BNZSA. Project implemented in Python with FastAPI and MySQL.",
+        "link": "https://github.com/BNZSA-Spain/",
+        "public": false
+    },
+    {
+        "name": "BNZSA ETL",
+        "description": "Various process of extraction, transformation and load (ETL) using Python, PHP, MySQL, SQLServer, Airflow, Pandas",
+        "link": "https://github.com/BNZSA-Spain/",
+        "public": false
+    },
+    {
+        "name": "Battle Sim",
+        "description": "Software to simulate war battles between armies. Project that links knowledge of AI, Simulation and DSL implementation.",
+        "link": "https://github.com/atp-ariel/battle-sim",
+        "public":true
+    },
+    {
+        "name": "ReTex",
+        "description": "An information retrieval system based on Vectorial Model. Implemented in Python using Flask and VueJS.",
+        "link": "https://github.com/atp-ariel/retex",
+        "public":true
+    },
+    {
+        "name": "DFU3dREC",
+        "description": "Software to segment and reconstruct 3D models of diabetic foot ulcers using Intel Realsense Depth Camera.",
+        "link": "https://github.com/jvaldesgonzalez/dfu_thesis",
+        "public":true
+    },
+    {
+        "name": "Roar",
+        "description": "A distributed social media based on Twitter. Project implemented in Python with FastAPI and AngularJS.",
+        "link": "https://github.com/Roar-Network/",
+        "public":true
+    }
+]

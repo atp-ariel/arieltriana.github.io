@@ -1,0 +1,10 @@
+button[type=submit] {
+    background-color: var(--color-action) !important;
+    color: var(--color-background) !important;
+    border-radius: 3rem !important;
+    padding: 0.5rem 1rem !important;
+}
+
+textarea {
+    min-height: 150px !important;
+}

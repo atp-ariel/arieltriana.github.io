@@ -1,0 +1,3 @@
+#buttons > a {
+    border-color: var(--color-action) !important;
+}

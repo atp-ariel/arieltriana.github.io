@@ -1,0 +1,31 @@
+.project-item {
+    background-color: var(--color-background);
+    border-radius: 1rem !important;
+    box-shadow: 0 0 10px var(--color-backbground);
+    height: 230px !important;
+    max-height: 230px !important;
+    margin-bottom: 25px !important;
+}
+
+.project-item img {
+    box-shadow: 0 0 10px var(--color-primary-light);
+}
+
+.project-item a[role=button] {
+    color: var(--color-background) !important;
+    background-color: var(--color-action) !important;
+    border-radius: 3rem !important;
+    border-color: var(--color-action) !important;
+}
+
+.project-item a[role=button][disabled] {
+    color: var(--color-background) !important;
+    background-color: var(--color-text) !important;
+    border-radius: 3rem !important;
+    border-color: var(--color-text) !important;
+}
+
+.project-item-footer{
+    display: flex;
+    flex-direction: row-reverse;
+}

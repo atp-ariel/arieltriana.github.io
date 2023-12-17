@@ -1,0 +1,39 @@
+#home {
+    background:linear-gradient(0deg, var(--color-primary-light), var(--color-primary-light)), url("../../assets/banner.png");
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-subtitle {
+    font-weight: 200!important;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1.3rem;
+}
+
+.home-title {
+    color: var(--color-primary) !important;
+    font-weight: bold!important;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+#h-download {
+    background-color: var(--color-text) !important;
+    color: var(--color-background) !important;
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+}
+
+#h-download:hover {
+    color: var(--color-action) !important;
+}
+
+
+.home-content {
+    padding-top: 50%;
+    text-align: end;
+    align-items: end;
+    justify-content: end;
+}

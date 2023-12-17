@@ -1,0 +1,78 @@
+:root {
+    --color-primary: #1A237E;
+    --color-primary-light: #1A237E25;
+    --color-background: white;
+    --color-text: #424242;
+    --color-action: #00C853;
+    --main-font: "Montserrat", sans-serif;
+    --secondary-font: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-text);
+}
+
+.download {
+    background-color: var(--color-action)!important;
+    color: var(--color-background) !important;
+    border-radius: 3rem !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.download:hover {
+    background-color: var(--color-text)!important;
+    color: var(--color-action)!important;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-action) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--main-font);
+}
+
+p, span, a, li, label, input, textarea, select, option, button {
+    font-family: var(--secondary-font);
+}
+
+.page-title {
+    margin-top: 1.5rem!important;
+    margin-bottom: 1.5rem!important;
+    font-size: 1.5rem;
+    font-weight: 600!important;
+    font-family: var(--main-font) !important;
+    color: var(--color-primary) !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+}
+
+.page {
+    padding-top: 1.5rem!important;
+    padding-bottom: 1.5rem!important;
+}
+
+
+.page-title span {
+    font-size: 1.5rem;
+    font-weight: 600!important;
+    font-family: var(--main-font) !important;
+}
+
+.color-bg {
+    background-color: var(--color-primary-light) !important;
+}
+
+.page-title-light {
+    color: var(--color-background) !important;
+}
