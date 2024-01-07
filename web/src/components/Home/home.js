@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import NavLink from 'react-bootstrap/esm/NavLink';
-import { Github } from 'react-bootstrap-icons';
+import { Github, Linkedin } from 'react-bootstrap-icons';
 import english_cv from "../../assets/cv-ariel-triana-english.pdf";
 
 const ATPHome = () => {
@@ -18,9 +18,10 @@ const ATPHome = () => {
                         <h1 className="home-title">Hi 👋🏻, I'm Ariel Triana</h1>
                         <h4 className="home-subtitle">Software Developer</h4>
                         <h4 className="home-subtitle">Data science enthusiast</h4>
-                        <div className="d-flex mt-3 align-items-end text-align-end justify-content-end">
+                        <div className="d-flex mt-3 align-items-end text-align-end justify-content-end" id="rrss">
                             <NavLink href={english_cv} download={true} id="h-download" className="download">Download CV</NavLink>
                             <NavLink href="https://github.com/atp-ariel" target="_blank"><Github color="#424242" size={40}/></NavLink>
+                            <NavLink href="https://linkedin.com/in/atp-ariel" target="_blank"><Linkedin color="#424242" size={40}/></NavLink>
                         </div>
                     </div>
                 </Col>

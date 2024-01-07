@@ -15,7 +15,8 @@ const ATPContact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(process.env.SERVICE_KEY, process.env.TEMPLATE_KEY, form.current, process.env.API_KEY).then((result) => {
+        console.log(process.env);
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_KEY, process.env.REACT_APP_TEMPLATE_KEY, form.current, process.env.REACT_APP_API_KEY).then((result) => {
             alert(result.text);
         }, (error) => {
             alert(error.text);

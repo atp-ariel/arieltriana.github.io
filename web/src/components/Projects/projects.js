@@ -28,7 +28,6 @@ const ATPProjects = () => {
 
 const ATPProjectItem = (props) => {
   var image_str = "https://avatars.githubusercontent.com/" + props.link.split("/")[3];
-  console.log(props);
   return (
     <Col xs={12} md={4}>
       <Card className="project-item">

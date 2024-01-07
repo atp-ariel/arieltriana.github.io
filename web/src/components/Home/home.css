@@ -37,3 +37,7 @@
     align-items: end;
     justify-content: end;
 }
+
+#rrss > a{
+    margin-right:1rem !important;
+}
